@@ -10,7 +10,7 @@ int computer1Losses = 0;
 int computer2Losses = 0;
 
 
-while (games < 100000000)
+while (games < 100000000) // Number of games
 {
     games++;
     int computer1Choice = rps.Next(0, 3);
@@ -44,8 +44,6 @@ Console.WriteLine("Computer 1 Losses :" + computer1Losses);
 Console.WriteLine("Computer 2 Wins :" + computer2Wins);
 Console.WriteLine("Computer 2 Losses :" + computer2Losses);
 
-
-
 if (computer1Wins == computer2Wins)
 {
     Console.WriteLine("Computers TIE");
@@ -54,7 +52,6 @@ if (computer1Wins == computer2Wins)
 else if (computer1Wins > computer2Wins)
 {
     Console.WriteLine("Computer One won this round and won by " + (computer1Wins - computer2Wins) + " matches");
-
 }
 
 else if (computer1Wins < computer2Wins)
